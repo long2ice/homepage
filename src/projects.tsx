@@ -69,12 +69,12 @@ function Projects(props: Record<string, any>) {
     },
   ];
   return (
-    <div {...props}>
-      <div>
+    <Box {...props}>
+      <Box mt="2%">
         <Text fontSize="4xl" as="em">
           My Awesome Products
         </Text>
-        <Grid mt="2%" templateColumns="repeat(3, 1fr)">
+        <Grid mt="2%" templateColumns="repeat(3, 1fr)" gap={2}>
           {products.map((product) => (
             <GridItem>
               <LinkBox textDecoration="none">
@@ -95,7 +95,7 @@ function Projects(props: Record<string, any>) {
             </GridItem>
           ))}
         </Grid>
-      </div>
+      </Box>
       <Box mt="2%">
         <Text fontSize="4xl" as="em">
           My Open Source Projects
@@ -115,7 +115,7 @@ function Projects(props: Record<string, any>) {
           </GridItem>
         ))}
       </Grid>
-    </div>
+    </Box>
   );
 }
 
