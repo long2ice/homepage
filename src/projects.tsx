@@ -1,5 +1,6 @@
 import {
   Box,
+  Center,
   Grid,
   GridItem,
   Image,
@@ -70,37 +71,33 @@ function Projects(props: Record<string, any>) {
   ];
   return (
     <Box {...props}>
-      <Box mt="2%">
-        <Text fontSize="4xl" as="em">
-          My Awesome Products
-        </Text>
-        <Grid mt="2%" templateColumns="repeat(3, 1fr)" gap={2}>
-          {products.map((product) => (
-            <GridItem>
-              <LinkBox textDecoration="none">
-                <Box
-                  maxW="sm"
-                  borderWidth="1px"
-                  borderRadius="5px"
-                  overflow="hidden"
-                  padding={2}
-                >
-                  <Text fontSize="xl" fontWeight="medium" color="#3081ED">
-                    {product.title}
-                  </Text>
-                  <Text color="#434D58">{product.description}</Text>
-                </Box>
-                <LinkOverlay href={product.link} isExternal />
-              </LinkBox>
-            </GridItem>
-          ))}
-        </Grid>
-      </Box>
-      <Box mt="2%">
-        <Text fontSize="4xl" as="em">
-          My Open Source Projects
-        </Text>
-      </Box>
+      <Center fontSize="2xl" as="em">
+        My Awesome Products
+      </Center>
+      <Grid mt="2%" templateColumns="repeat(3, 1fr)" gap={2}>
+        {products.map((product) => (
+          <GridItem>
+            <LinkBox textDecoration="none">
+              <Box
+                maxW="sm"
+                borderWidth="1px"
+                borderRadius="5px"
+                overflow="hidden"
+                padding={2}
+              >
+                <Text fontSize="xl" fontWeight="medium" color="#3081ED">
+                  {product.title}
+                </Text>
+                <Text color="#434D58">{product.description}</Text>
+              </Box>
+              <LinkOverlay href={product.link} isExternal />
+            </LinkBox>
+          </GridItem>
+        ))}
+      </Grid>
+      <Center mt="2%" fontSize="2xl" as="em">
+        My Open Source Projects
+      </Center>
       <Grid mt="2%" gap={4} templateColumns="repeat(3, 1fr)">
         {projects.map((p) => (
           <GridItem>

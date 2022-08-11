@@ -13,7 +13,7 @@ export const App = () => (
   <ChakraProvider>
     <Flex direction="column" minH="100vh" alignItems="center" m="2%">
       <Home />
-      <Projects />
+      <Projects m="2%" />
     </Flex>
   </ChakraProvider>
 );
