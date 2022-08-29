@@ -51,6 +51,14 @@ function Projects(props: Record<string, any>) {
       username: "long2ice",
       repo: "asyncmy",
     },
+    {
+      username: "long2ice",
+      repo: "rearq",
+    },
+    {
+      username: "long2ice",
+      repo: "asynch",
+    },
   ];
   const products: Array<Product> = [
     {
