@@ -62,11 +62,6 @@ function Projects(props: Record<string, any>) {
   ];
   const products: Array<Product> = [
     {
-      title: "TelSearch",
-      description: "Search for telegram",
-      link: "https://telsearch.long2ice.io",
-    },
-    {
       title: "Awesome",
       description: "Search for awesome projects",
       link: "https://awesome.long2ice.io",
