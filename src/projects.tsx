@@ -62,6 +62,11 @@ function Projects(props: Record<string, any>) {
   ];
   const products: Array<Product> = [
     {
+      title: "TelSearch",
+      description: "Search for Telegram",
+      link: "https://telsearch.long2ice.io",
+    },
+    {
       title: "Awesome",
       description: "Search for awesome projects",
       link: "https://awesome.long2ice.io",
@@ -77,16 +82,16 @@ function Projects(props: Record<string, any>) {
       <Center fontSize="2xl" as="em">
         My Awesome Products
       </Center>
-      <Grid mt="2%" templateColumns="repeat(3, 1fr)" gap={2}>
+      <Grid mt="2%" templateColumns="repeat(3, 1fr)" gap={4}>
         {products.map((product) => (
           <GridItem>
-            <LinkBox textDecoration="none">
+            <LinkBox textDecoration="none" h="100%">
               <Box
-                maxW="sm"
                 borderWidth="1px"
                 borderRadius="5px"
                 overflow="hidden"
-                padding={2}
+                padding={4}
+                h="100%"
               >
                 <Text fontSize="xl" fontWeight="medium" color="#3081ED">
                   {product.title}
@@ -110,6 +115,7 @@ function Projects(props: Record<string, any>) {
             >
               <Image
                 src={`https://github-readme-stats.vercel.app/api/pin/?username=${p.username}&repo=${p.repo}`}
+                alt="github stats"
               />
             </Link>
           </GridItem>
