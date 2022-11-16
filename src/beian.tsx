@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "@chakra-ui/react";
-import { ExternalLinkIcon } from "@chakra-ui/icons";
 
-export default function () {
+export default function Beian() {
   const [needBeian, setNeedBeian] = useState(false);
   useEffect(() => {
     const hostname = window.location.hostname;
