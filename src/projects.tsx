@@ -67,6 +67,11 @@ function Projects(props: Record<string, any>) {
       link: "https://telsearch.long2ice.io",
     },
     {
+      title: "PanSearch",
+      description: "网盘资源搜索",
+      link: "https://pansearch.long2ice.io",
+    },
+    {
       title: "VPSMON",
       description: "VPS provider gather and monitor",
       link: "https://vpsmon.long2ice.io",
