@@ -63,23 +63,18 @@ function Projects(props: Record<string, any>) {
   const products: Array<Product> = [
     {
       title: "TelSearch",
-      description: "Search for Telegram",
+      description: "Search for Telegram channels and groups",
       link: "https://telsearch.long2ice.io",
     },
     {
       title: "PanSearch",
-      description: "网盘资源搜索",
+      description: "Cloud drive search",
       link: "https://pansearch.long2ice.io",
     },
     {
       title: "VPSMON",
       description: "VPS provider gather and monitor",
       link: "https://vpsmon.long2ice.io",
-    },
-    {
-      title: "Awesome",
-      description: "Search for awesome projects",
-      link: "https://awesome.long2ice.io",
     },
     {
       title: "Gema",
