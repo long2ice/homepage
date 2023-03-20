@@ -72,11 +72,6 @@ function Projects(props: Record<string, any>) {
       link: "https://pansearch.long2ice.io",
     },
     {
-      title: "VPSMON",
-      description: "VPS provider gather and monitor",
-      link: "https://vpsmon.long2ice.io",
-    },
-    {
       title: "Gema",
       description: "Convert from json/xml/yaml to Pydantic/Go/Rust etc.",
       link: "https://gema.long2ice.io",
