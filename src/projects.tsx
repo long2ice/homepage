@@ -64,17 +64,17 @@ function Projects(props: Record<string, any>) {
     {
       title: "TelSearch",
       description: "Search for Telegram channels and groups",
-      link: "https://telsearch.long2ice.io",
+      link: "https://www.telsearch.me",
     },
     {
       title: "PanSearch",
       description: "Cloud drive search",
-      link: "https://pansearch.long2ice.io",
+      link: "https://www.pansearch.me",
     },
     {
-      title: "Gema",
-      description: "Convert from json/xml/yaml to Pydantic/Go/Rust etc.",
-      link: "https://gema.long2ice.io",
+      title: "BTSearch",
+      description: "Search for magnet links",
+      link: "https://www.btsearch.love",
     },
   ];
   return (
