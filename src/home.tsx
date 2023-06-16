@@ -1,6 +1,5 @@
 import { Avatar, Divider, HStack, Link, Text, VStack } from "@chakra-ui/react";
 import avatar from "./assets/avatar.jpeg";
-import * as React from "react";
 
 function Home(props: Record<string, any>) {
   return (
